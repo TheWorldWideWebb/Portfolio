@@ -4,8 +4,8 @@ function App() {
   return (
       <div className="bg-gray-50 py-24 sm:py-32">
         <div className="mx-auto max-w-2xl px-6 lg:max-w-6xl lg:px-8">
-          <h2 className="text-center text-base/7 font-semibold text-indigo-600">It's me Tom Webb</h2>
-          <div className="mt-10 grid gap-4 sm:mt-16 lg:grid-cols-2 lg:grid-rows-2">
+          <h2 className="text-center text-base/7 text-xl font-semibold text-indigo-600">It's me Tom Webb</h2>
+          <div className="mt-5 grid gap-4 sm:mt-10 lg:grid-cols-2 lg:grid-rows-2">
 
             <div className="relative max-lg:row-start-1 ">
               <div className="absolute inset-px rounded-lg bg-white lg:rounded-l-[2rem]"></div>
