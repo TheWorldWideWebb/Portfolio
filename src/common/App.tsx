@@ -1,4 +1,5 @@
 import './App.css';
+import Card from "../components/atoms/card";
 
 function App() {
   return (
@@ -7,18 +8,19 @@ function App() {
           <h2 className="text-center text-base/7 text-xl font-semibold text-indigo-600">It's me Tom Webb</h2>
           <div className="mt-5 grid gap-4 sm:mt-10 lg:grid-cols-2 lg:grid-rows-2">
 
-            <div className="relative max-lg:row-start-1 ">
-              <div className="absolute inset-px rounded-lg bg-white lg:rounded-l-[2rem]"></div>
-                <h3 className="pt-2 text-lg font-medium tracking-tight max-lg:text-center">Professional</h3>
-              <div
-                  className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 max-lg:rounded-t-[2rem]"></div>
-            </div>
 
-            <div className="relative max-lg:row-start-2 lg:row-start-2">
-              <div className="absolute inset-px rounded-lg bg-white"></div>
-                <h3 className="pt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">Stats</h3>
-              <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5"></div>
-            </div>
+            <Card
+              children={
+                <p className="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">Personal</p>
+              }
+              rowSpan={1}
+            />
+            <Card
+                children={
+                    <p className="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">Professional</p>
+                }
+                rowSpan={2}
+            />
 
 
             <div className="relative lg:row-span-2">
@@ -33,8 +35,7 @@ function App() {
                   </p>
                 </div>
                 <div className="relative min-h-[30rem] w-full grow">
-                  <div
-                      className="absolute bottom-0 left-10 right-0 top-10 overflow-hidden rounded-tl-xl bg-gray-900 shadow-2xl">
+                  <div className="absolute bottom-0 left-10 right-0 top-10 overflow-hidden rounded-tl-xl bg-gray-900 shadow-2xl">
                     <div className="flex bg-gray-600/40 ring-1 ring-white/5">
                       <div className="-mb-px flex text-sm/6 font-medium text-white">
 
